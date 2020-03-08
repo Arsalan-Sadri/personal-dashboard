@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import SignupPage from './pages/SignupPage.js';
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exat path='/' component={SignupPage} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
